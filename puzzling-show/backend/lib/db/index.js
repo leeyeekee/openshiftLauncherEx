@@ -5,7 +5,7 @@
  const serviceHost = process.env.DB_HOST || 'localhost';
  const user = process.env.DB_USERNAME || 'user';
  const password = process.env.DB_PASSWORD || 'password';
- const connectionString = `postgresql://${user}:${password}@${serviceHost}:5432/my_data`;
+ const connectionString = `postgresql://${user}:${password}@${serviceHost}:5432/sampledb`;
 
  const pool = new Pool({
    connectionString
