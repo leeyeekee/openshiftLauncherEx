@@ -2,7 +2,7 @@
 
  const {Pool} = require('pg');
 
- const serviceHost = process.env.DB_HOST || 'localhost';
+ const serviceHost = process.env.POSTGRESQL_SERVICE_HOST || 'localhost';
  const user = process.env.DB_USERNAME || 'user';
  const password = process.env.DB_PASSWORD || 'password';
  const connectionString = `postgresql://${user}:${password}@${serviceHost}:5432/sampledb`;
