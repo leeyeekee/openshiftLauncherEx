@@ -56,7 +56,7 @@ const options = {
   livenessURL: '/health',
   livenessCallback: (request, response) => {
     //return isOnline ? response.send('OK') : response.sendStatus(500);
-    return os.hostname();
+    return response.send(os.hostname());
   }
 };
 
