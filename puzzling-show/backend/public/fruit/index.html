@@ -30,7 +30,7 @@
     app.controller("FruitManagementController", function ($scope, $http) {
 
       //Initialize page with default data which is blank in this example
-      $scope.hostname = process.env.HOSTNAME;
+      
       $scope.fruits = [];
 
       $scope.form = {
@@ -126,11 +126,6 @@
   <p>This application demonstrates how a Node.js application implements a CRUD endpoint to manage <em>fruits</em>.
     This management interface invokes the CRUD service endpoint, that interact with a PosgreSQL database
     .</p>
-  <p id="demo"></p>
-
-<script>
-document.getElementById("demo").innerHTML = process.env.HOSTNAME;
-</script>
   
   <h3>Add/Edit a fruit</h3>
 
