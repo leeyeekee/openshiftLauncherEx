@@ -48,7 +48,8 @@ db.init().then(() => {
 
 app.use('/api/stop', (request, response) => {
   isOnline = false;
-  return response.send('Stopping HTTP server');
+  //return response.send('Stopping HTTP server');
+  return response.send(os.hostname());
 });
 
 const options = {
